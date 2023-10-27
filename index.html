@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        .con{
+            height: 90vh;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        button{
+            width: 15%;
+            height: 10%;
+            border-radius: 2ic;
+            border: 5px groove black;
+        }
+        .move{
+           opacity: 0;
+            font-size: 45px;
+           
+        }
+    </style>
+</head>
+<body> <marquee class="move">HELLO   I   AM   RED</marquee>
+
+    <div class="con">
+        <button class="red">REd</button>
+        <button class="green">Green</button>
+        <button class="blue">#DCA000</button>
+        <button class="lg">rgba</button>
+        <button class="gl">hsl</button></div>
+       
+
+        <script>
+            let b=document.querySelector(".red")
+            let c=document.querySelector(".con")
+            let m =     document.querySelector(".move")
+                s=0
+                b.addEventListener("click",function(){
+                    if(s==0){
+                        
+                        c.style.backgroundColor="red"
+                        s=1
+                        b.innerHTML="<h1>None</h1>"
+                        b.style.backgroundColor="red"
+                        m.style.opacity="1"
+                        m.innerHTML="hello i am red"
+                        m.style.color="red"
+                       
+                    }
+                    else{
+                        c.style.backgroundColor="white"
+                        b.innerHTML="<h1>REd</h1>"
+                        s=0
+                        m.style.opacity="0"
+                        
+                        
+                    }
+                })
+                
+
+                let gn=document.querySelector(".green")
+                let cn=document.querySelector(".con")
+                g=0
+                let sm =     document.querySelector(".move")
+                gn.addEventListener("click",function(){
+                    if(g==0){
+                        
+                        cn.style.backgroundColor="green"
+                        g=1
+                        gn.innerHTML="<h1>none</h1>"
+                        gn.style.backgroundColor="green"
+                        sm.style.opacity="1"
+                        sm.innerHTML="HELLO I AM GREEN"
+                        sm.style.color="green"
+                    }
+                    else{
+                        cn.style.backgroundColor="white"
+                        gn.innerHTML="<h1>Green</h1>"
+                        sm.style.opacity="0"
+                        g=0
+                    }
+                })
+
+
+                let smx =     document.querySelector(".move")
+                let bl=document.querySelector(".blue")
+            let cd=document.querySelector(".con")
+           
+                sd=0
+                bl.addEventListener("click",function(){
+                    if(sd==0){
+                        cd.style.backgroundColor="#DCA000"
+                        bl.style.backgroundColor="#DCA000"
+                        sd=1
+                        bl.innerHTML="<h1>None</h1>"
+                        smx.style.opacity="1"
+                        smx.innerHTML="HELLO I AM #DCA000"
+                        smx.style.color="#DCA000"
+                    }
+                    else{
+                        cd.style.backgroundColor="white"
+                        bl.innerHTML="<h1>Yellow</h1>"
+                        smx.style.opacity="0"
+                        
+                      
+                        sd=0
+                        
+                    }
+                })
+
+
+
+
+
+
+                let smxd =     document.querySelector(".move")
+                let ble=document.querySelector(".lg")
+            let cde=document.querySelector(".con")
+           
+                sdo=0
+                ble.addEventListener("click",function(){
+                    if(sdo==0){
+                        cde.style.backgroundColor="rgba(255, 0, 0, 0.4)"
+                        sdo=1
+                        ble.innerHTML="<h1>None</h1>"
+                        ble.style.backgroundColor="rgba(255, 0, 0, 0.4)"
+                        smxd.style.opacity="1"
+                        smxd.style.color="rgba(255, 0, 0, 0.4)"
+                        smxd.innerHTML="HELLO I AM rgba(255, 0, 0, 0.4"
+
+                    }
+                    else{
+                        cde.style.backgroundColor="white"
+                        ble.innerHTML="<h1>rgba</h1>"
+                        sdo=0
+                        smxd.style.opacity="0"
+
+                        
+                    }
+                })
+
+
+
+
+
+
+                let smxde =     document.querySelector(".move")
+                let bled=document.querySelector(".gl")
+            let cden=document.querySelector(".con")
+           
+                sdoe=0
+                bled.addEventListener("click",function(){
+                    if(sdoe==0){
+                        cden.style.backgroundColor="hsl(300, 76%, 72%)"
+                        sdoe=1
+                        bled.innerHTML="<h1>None</h1>"
+                        bled.style.backgroundColor="hsl(300, 76%, 72%)"
+                        smxd.style.opacity="1"
+                        smxd.style.color="hsl(300, 76%, 72%)"
+                        smxd.innerHTML="HELLO I AM hsl(300, 76%, 72%)"
+                    }
+                    else{
+                        cden.style.backgroundColor="white"
+                        bled.innerHTML="<h1>hsl</h1>"
+                        sdoe=0
+                        smxd.style.opacity="0"
+                        
+                    }
+                })
+                </script>
+    </div>
+</body>
+</html>
